@@ -1,0 +1,59 @@
+/* src/components/Modal.css */
+
+.modal-overlay {
+    position: fixed; /* Fixed position to cover the entire screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dimmed background for overlay effect */
+    display: flex; /* Use flexbox to center the modal */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000; /* Ensure it overlays on top of other content */
+}
+
+.modal-content {
+    background: white; /* White background for the modal content */
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text inside the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+    width: 90%; /* Responsive width for small screens */
+    max-width: 500px; /* Max width for larger screens */
+}
+
+.modal-buttons {
+    margin: 20px 0; /* Margin around the button section */
+}
+
+.modal-buttons button {
+    margin: 0 10px; /* Space between buttons */
+    padding: 10px 20px; /* Padding inside buttons */
+    border: none; /* No border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    background-color: #007bff; /* Primary color for buttons */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.modal-buttons button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.close-modal {
+    background: transparent; /* Transparent background for close button */
+    border: none; /* No border */
+    color: #333; /* Text color */
+    font-size: 20px; /* Larger text size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.modal h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.modal button {
+    margin-top: 10px; /* Space above buttons inside modal */
+}

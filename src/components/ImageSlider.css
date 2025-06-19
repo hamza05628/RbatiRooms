@@ -1,0 +1,60 @@
+.slider-title {
+  font-size: 3.2rem; /* Taille du titre */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Marge en bas réduite */
+  color: #333;
+}
+
+.tranding-slide {
+  width: 100%; /* Largeur complète des slides */
+  display: flex;
+  flex-direction: column; /* Empiler verticalement */
+  align-items: center; /* Centrer les éléments */
+  padding: 3px; /* Réduire le padding */
+}
+
+.tranding-slide-img {
+  width: 80%; /* Augmenter la largeur du conteneur */
+  max-width: 600px; /* Largeur maximale plus grande */
+  height: 350px; /* Hauteur plus grande */
+  border-radius: 10px; /* Coins arrondis */
+  overflow: hidden; /* Cacher le débordement */
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  margin-bottom: 10px; /* Espacement plus important sous l'image */
+  background-color: #f5f5f5; /* Fond clair */
+}
+
+.tranding-slide-img img {
+  width: 100%; /* Largeur complète de l'image */
+  height: 100%; /* Hauteur complète de l'image */
+  object-fit: cover; /* Remplir l'espace tout en gardant le ratio */
+  image-rendering: -webkit-optimize-contrast; /* Optimiser la netteté */
+  image-rendering: crisp-edges; /* Améliorer la netteté pour les navigateurs qui le supportent */
+}
+
+.tranding-slide-content {
+  margin-top: 0.25rem; /* Espacement réduit entre le titre et l'image */
+}
+
+.food-name {
+  font-size: 2.5rem; /* Taille du texte plus grande */
+  color: #333; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+  margin: 0; /* Pas de marge externe */
+  padding: 0.5rem 0; /* Ajout d'espace interne */
+  box-shadow: 3px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  @media (max-width: 600px) {
+    font-size: 1.2rem; /* Taille de texte réduite pour les petits écrans */
+  }
+}
+
+/* Personnalisation des puces de pagination swiper */
+.swiper-pagination-bullet {
+  background-color: #555; 
+}
+
+/* Personnalisation des couleurs des boutons de navigation swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #555; 
+}
